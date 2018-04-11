@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	  <ThingDef ParentName="ArmorHelmetMakeableBase">
-    <defName>Haradrim_Hoods</defName>
+    <defName>LotRM_Haradrim_Hoods</defName>
     <label>haradrim hoods</label>
     <description>Haradrim Hoods</description>
     <techLevel>Industrial</techLevel>
@@ -69,7 +69,7 @@
   </ThingDef>
   
     <ThingDef ParentName="ArmorHelmetMakeableBase">
-    <defName>Easterling_Helmets</defName>
+    <defName>LotRM_Easterling_Helmets</defName>
     <label>easterling helmets</label>
     <description>Easterling Helmets</description>
     <techLevel>Industrial</techLevel>
