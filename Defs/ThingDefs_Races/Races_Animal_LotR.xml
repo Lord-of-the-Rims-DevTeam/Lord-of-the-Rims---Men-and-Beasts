@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	  <ThingDef ParentName="AnimalThingBase">
-    <defName>Mumakils</defName>
+    <defName>LotR_Mumakils</defName>
     <label>mumakil</label>
     <description>I have no clue what to set as a description so cheese :)</description>
     <statBases>
@@ -99,11 +99,11 @@
       </li>
 	</comps>
   </ThingDef>
- 
+
  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>Mumakils</defName>
+    <defName>LotR_Mumakils</defName>
     <label>mumakil</label>
-    <race>Mumakils</race>
+    <race>LotR_Mumakils</race>
     <combatPower>200</combatPower>
     <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
     <wildSpawn_EcoSystemWeight>1</wildSpawn_EcoSystemWeight>
