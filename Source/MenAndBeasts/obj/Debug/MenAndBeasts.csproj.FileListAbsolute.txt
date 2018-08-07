@@ -1,0 +1,3 @@
+D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Lord-of-the-Rims---Men-and-Beasts\Assemblies\Dwarves.dll
+D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Lord-of-the-Rims---Men-and-Beasts\Source\MenAndBeasts\obj\Debug\MenAndBeasts.csprojResolveAssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Lord-of-the-Rims---Men-and-Beasts\Source\MenAndBeasts\obj\Debug\Dwarves.dll

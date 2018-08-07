@@ -20,7 +20,7 @@
     <statBases>
       <WorkToMake>29000</WorkToMake>
       <Mass>3.4</Mass>
-      <Weapon_Bulk>1.0</Weapon_Bulk>
+      
     </statBases>
     <equippedAngleOffset>60</equippedAngleOffset>
     <stuffCategories>
@@ -87,7 +87,7 @@
     <statBases>
       <WorkToMake>27000</WorkToMake>
       <Mass>2.9</Mass>
-      <Weapon_Bulk>1.0</Weapon_Bulk>
+      
     </statBases>
     <equippedAngleOffset>60</equippedAngleOffset>
     <stuffCategories>
@@ -154,7 +154,7 @@
     <statBases>
       <WorkToMake>25000</WorkToMake>
       <Mass>1.0</Mass>
-      <Weapon_Bulk>1.0</Weapon_Bulk>
+      
     </statBases>
     <equippedAngleOffset>60</equippedAngleOffset>
     <stuffCategories>

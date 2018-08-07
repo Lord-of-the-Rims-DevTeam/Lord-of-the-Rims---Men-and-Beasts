@@ -24,7 +24,7 @@
 		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
     <costList>
-      <Component>2</Component>
+      <ComponentIndustrial>2</ComponentIndustrial>
 			<Plasteel>5</Plasteel>
     </costList>
     <equippedStatOffsets>
@@ -92,7 +92,7 @@
 		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
     <costList>
-      <Component>2</Component>
+      <ComponentIndustrial>2</ComponentIndustrial>
 			<Plasteel>5</Plasteel>
     </costList>
     <equippedStatOffsets>

@@ -2,7 +2,7 @@
 <Defs>
 
 
-	<ThingDef ParentName="LotRD_ArmorMakeableBase">
+	<ThingDef ParentName="LotRD_ArmorSmithableBase">
     <defName>LotRD_DwarfApparel_GimliArmor</defName>
     <label>Dwarven longbeard chaincoat</label>
     <description>Used by Durin's folk, this fine reinforced tabard wrapped chainmail served as a strong yet comfortable alternative to heavier armors and full plates favored by dwarves in combat.</description>
@@ -11,7 +11,7 @@
       <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Pawn/Dwarf/Apparel/Armor/sheidulaGimliArmor_Male_front</texPath>
+      <texPath>Things/Pawn/Dwarf/Apparel/Armor/sheidulaGimliArmor_Male_north</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -58,7 +58,7 @@
     </apparel>
   </ThingDef>
 
-	<ThingDef ParentName="LotRD_ArmorMakeableBase">
+	<ThingDef ParentName="LotRD_ArmorSmithableBase">
     <defName>LotRD_DwarfApparel_MoriaBattleArmor</defName>
     <label>Dwarven Moria battle armor</label>
     <description>Used by the Dwarves of Moria, this sturdy battle armor helped prolong their survival during the Battle of Moria.</description>

@@ -5,13 +5,13 @@
 		<label>rhun</label>
     <description>Rhûn, also known as The East and Eastlands in the Westron tongue, is a large region in the far eastern part of Middle-earth. It was the home and kingdom of the Easterlings in the Second and Third Ages. It had many different groups who ultimately fought together and were in Sauron's service. They seem to be based on Central Asian cultures.</description>
     <pawnsPlural>easterlings</pawnsPlural>
-    <baseSelectionWeight>1</baseSelectionWeight>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <maxCountAtGameStart>2</maxCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
-		<appreciative>false</appreciative>
+		
     <leaderTitle>ruler</leaderTitle>
     <expandingIconTexture>World/WorldObjects/Expanding/PirateOutpost</expandingIconTexture>
     <colorSpectrum>
@@ -25,7 +25,7 @@
     </startingGoodwill>
     <mustStartOneEnemy>true</mustStartOneEnemy>
 		<factionNameMaker>NamerFactionPirate</factionNameMaker>
-    <baseNameMaker>NamerFactionBasePirate</baseNameMaker>
+    <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
 		<techLevel>Spacer</techLevel>
 		<backstoryCategory>Raider</backstoryCategory>
 		<geneticVariance>0.8</geneticVariance>
@@ -43,7 +43,7 @@
     <pawnGroupMakers>
       <li>
 				<!-- Normal fights, standard mix -->
-				<kindDef>Normal</kindDef>
+				<kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
           <Drifter>5</Drifter>
@@ -62,7 +62,7 @@
       </li>
       <li>
 				<!-- Normal fights, melee-only -->
-        <kindDef>Normal</kindDef>
+        <kindDef>Combat</kindDef>
         <commonality>25</commonality>
         <disallowedStrategies>
           <li>Siege</li>
@@ -73,7 +73,7 @@
       </li>
       <li>
 				<!-- Base defense -->
-				<kindDef>FactionBase</kindDef>
+				<kindDef>Settlement</kindDef>
         <options>
           <Drifter>5</Drifter>
 					<GrenadierDestructive>20</GrenadierDestructive>
@@ -88,7 +88,7 @@
         </options>
       </li>
     </pawnGroupMakers>
-    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+    <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
   </FactionDef>
   
     <FactionDef>
@@ -96,7 +96,7 @@
     <label>harad</label>
     <description>Harad, also known as Haradwaith, was the name of the immense realm located south of Gondor and Mordor. The Men of Harad were called Southrons or Haradrim ("South-multitude").</description>
     <pawnsPlural>haradrim</pawnsPlural>
-    <baseSelectionWeight>1</baseSelectionWeight>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
 		<raidCommonalityFromPointsCurve>
@@ -119,7 +119,7 @@
     </startingGoodwill>
     <mustStartOneEnemy>true</mustStartOneEnemy>
     <factionNameMaker>NamerFactionTribal</factionNameMaker>
-    <baseNameMaker>NamerFactionBaseTribal</baseNameMaker>
+    <settlementNameMaker>NamerFactionBaseTribal</settlementNameMaker>
     <pawnNameMaker>NamerPersonTribal</pawnNameMaker>
     <techLevel>Neolithic</techLevel>
     <backstoryCategory>Tribal</backstoryCategory>
@@ -149,7 +149,7 @@
     </allowedArrivalTemperatureRange>
     <pawnGroupMakers>
       <li>
-        <kindDef>Normal</kindDef>
+        <kindDef>Combat</kindDef>
         <options>
           <TribalWarrior>60</TribalWarrior>
           <TribalArcher>100</TribalArcher>
@@ -179,7 +179,7 @@
         </guards>
       </li>
       <li>
-        <kindDef>FactionBase</kindDef>
+        <kindDef>Settlement</kindDef>
         <options>
           <TribalWarrior>60</TribalWarrior>
           <TribalArcher>100</TribalArcher>
@@ -198,7 +198,7 @@
 		<label>gondor</label>
     <description>Gondor was the prominent kingdom of Men in Middle-earth, bordered by Rohan to the north, Harad to the south, the cape of Andrast and the Sea to the west, and Mordor to the east. Its first capital was Osgiliath, moved to Minas Tirith in TA 1640. The city of Minas Tirith remained the capital of Gondor for the rest of the Third Age and into years of the Fourth Age; other major fortresses include Dol Amroth in Belfalas and Osgiliath, which was a city on the Anduin.</description>
     <pawnsPlural>men of gondor</pawnsPlural>
-    <baseSelectionWeight>1</baseSelectionWeight>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
     <canSiege>true</canSiege>
@@ -214,7 +214,7 @@
       <max>40</max>
     </startingGoodwill>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<baseNameMaker>NamerFactionBaseOutlander</baseNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<techLevel>Industrial</techLevel>
 		<backstoryCategory>Civil</backstoryCategory>
 		<geneticVariance>0.8</geneticVariance>
@@ -243,7 +243,7 @@
     </allowedArrivalTemperatureRange>
     <pawnGroupMakers>
       <li>
-        <kindDef>Normal</kindDef>
+        <kindDef>Combat</kindDef>
         <options>
 					<Villager>50</Villager>
 					<GrenadierDestructive>15</GrenadierDestructive>
@@ -257,7 +257,7 @@
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <TownTrader>1</TownTrader>
+          <Town_Trader>1</Town_Trader>
         </traders>
         <carriers>
           <Muffalo>6</Muffalo>
@@ -274,7 +274,7 @@
 				</guards>
       </li>
       <li>
-        <kindDef>FactionBase</kindDef>
+        <kindDef>Settlement</kindDef>
         <options>
 					<GrenadierDestructive>15</GrenadierDestructive>
 					<MercenarySlasher>70</MercenarySlasher>
@@ -286,7 +286,7 @@
 				</options>
       </li>
     </pawnGroupMakers>
-    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+    <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
   </FactionDef>
   
     <FactionDef>
@@ -294,7 +294,7 @@
 		<label>rohan</label>
     <description>Rohan was a great kingdom of Men, located in the land once known as Calenardhon, situated in the great vale between the Misty Mountains to the north and the White Mountains to the south. The land of Rohan extended from the fords of the river Isen in the west, up to the shores of the river Anduin in the east. The forest of Fangorn lay within the borders of Rohan, and the Elven city of Lorien lay to the north of the river Limlight.</description>
     <pawnsPlural>Rohirrim</pawnsPlural>
-    <baseSelectionWeight>1</baseSelectionWeight>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
     <canSiege>true</canSiege>
@@ -310,7 +310,7 @@
       <max>40</max>
     </startingGoodwill>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<baseNameMaker>NamerFactionBaseOutlander</baseNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<techLevel>Industrial</techLevel>
 		<backstoryCategory>Civil</backstoryCategory>
 		<geneticVariance>0.8</geneticVariance>
@@ -339,7 +339,7 @@
     </allowedArrivalTemperatureRange>
     <pawnGroupMakers>
       <li>
-        <kindDef>Normal</kindDef>
+        <kindDef>Combat</kindDef>
         <options>
 					<Villager>50</Villager>
 					<GrenadierDestructive>15</GrenadierDestructive>
@@ -353,7 +353,7 @@
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <TownTrader>1</TownTrader>
+          <Town_Trader>1</Town_Trader>
         </traders>
         <carriers>
           <Muffalo>6</Muffalo>
@@ -370,7 +370,7 @@
 				</guards>
       </li>
       <li>
-        <kindDef>FactionBase</kindDef>
+        <kindDef>Settlement</kindDef>
         <options>
 					<GrenadierDestructive>15</GrenadierDestructive>
 					<MercenarySlasher>70</MercenarySlasher>
@@ -382,6 +382,6 @@
 				</options>
       </li>
     </pawnGroupMakers>
-    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+    <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
   </FactionDef>
 </Defs>
