@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	  <FactionDef>
-		<defName>Rhun</defName>
+		<defName>LotRM_Rhun</defName>
 		<label>rhun</label>
     <description>Rhûn, also known as The East and Eastlands in the Westron tongue, is a large region in the far eastern part of Middle-earth. It was the home and kingdom of the Easterlings in the Second and Third Ages. It had many different groups who ultimately fought together and were in Sauron's service. They seem to be based on Central Asian cultures.</description>
     <pawnsPlural>easterlings</pawnsPlural>
@@ -92,7 +92,7 @@
   </FactionDef>
   
     <FactionDef>
-    <defName>Harad</defName>
+    <defName>LotRM_Harad</defName>
     <label>harad</label>
     <description>Harad, also known as Haradwaith, was the name of the immense realm located south of Gondor and Mordor. The Men of Harad were called Southrons or Haradrim ("South-multitude").</description>
     <pawnsPlural>haradrim</pawnsPlural>
@@ -194,7 +194,7 @@
   </FactionDef>
   
     <FactionDef>
-		<defName>Gondor</defName>
+		<defName>LotRM_Gondor</defName>
 		<label>gondor</label>
     <description>Gondor was the prominent kingdom of Men in Middle-earth, bordered by Rohan to the north, Harad to the south, the cape of Andrast and the Sea to the west, and Mordor to the east. Its first capital was Osgiliath, moved to Minas Tirith in TA 1640. The city of Minas Tirith remained the capital of Gondor for the rest of the Third Age and into years of the Fourth Age; other major fortresses include Dol Amroth in Belfalas and Osgiliath, which was a city on the Anduin.</description>
     <pawnsPlural>men of gondor</pawnsPlural>
@@ -290,7 +290,7 @@
   </FactionDef>
   
     <FactionDef>
-		<defName>Rohan</defName>
+		<defName>LotRM_Rohan</defName>
 		<label>rohan</label>
     <description>Rohan was a great kingdom of Men, located in the land once known as Calenardhon, situated in the great vale between the Misty Mountains to the north and the White Mountains to the south. The land of Rohan extended from the fords of the river Isen in the west, up to the shores of the river Anduin in the east. The forest of Fangorn lay within the borders of Rohan, and the Elven city of Lorien lay to the north of the river Limlight.</description>
     <pawnsPlural>Rohirrim</pawnsPlural>

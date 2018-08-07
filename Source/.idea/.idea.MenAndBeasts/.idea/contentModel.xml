@@ -12,5 +12,5 @@
       <e p="MenAndBeasts.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
     </e>
-  </ComponentIndustrial>
+  </component>
 </project>

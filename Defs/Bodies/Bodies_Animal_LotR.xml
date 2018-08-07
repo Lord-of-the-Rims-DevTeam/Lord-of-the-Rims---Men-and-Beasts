@@ -93,6 +93,7 @@
                   </parts>
                 </li>
                 <li>
+<<<<<<< HEAD
                   <def>Eye</def>
 <customLabel>left eye</customLabel>
                   <coverage>0.06</coverage>
@@ -110,6 +111,21 @@
                 <li>
                   <def>Ear</def>
 <customLabel>right ear</customLabel>
+=======
+                  <def>LeftEye</def>
+                  <coverage>0.06</coverage>
+                </li>
+                <li>
+                  <def>RightEye</def>
+                  <coverage>0.06</coverage>
+                </li>
+                <li>
+                  <def>LeftEar</def>
+                  <coverage>0.06</coverage>
+                </li>
+                <li>
+                  <def>RightEar</def>
+>>>>>>> e3ce6f786cadb729259db4daa5a76955f71fa2cf
                   <coverage>0.06</coverage>
                 </li>
                 <li>
@@ -144,8 +160,12 @@
           </parts>
         </li>
         <li>
+<<<<<<< HEAD
           <def>Leg</def>
 <customLabel>front left leg</customLabel>
+=======
+          <def>FrontLeftLeg</def>
+>>>>>>> e3ce6f786cadb729259db4daa5a76955f71fa2cf
           <coverage>0.06</coverage>
           <height>Bottom</height>
           <groups>
@@ -159,8 +179,12 @@
           </parts>
         </li>
         <li>
+<<<<<<< HEAD
           <def>Leg</def>
 <customLabel>front right leg</customLabel>
+=======
+          <def>FrontRightLeg</def>
+>>>>>>> e3ce6f786cadb729259db4daa5a76955f71fa2cf
           <coverage>0.06</coverage>
           <height>Bottom</height>
           <groups>
@@ -174,8 +198,12 @@
           </parts>
         </li>
         <li>
+<<<<<<< HEAD
           <def>Leg</def>
 <customLabel>rear left leg</customLabel>
+=======
+          <def>RearLeftLeg</def>
+>>>>>>> e3ce6f786cadb729259db4daa5a76955f71fa2cf
           <coverage>0.06</coverage>
           <height>Bottom</height>
           <parts>
@@ -186,8 +214,12 @@
           </parts>
         </li>
         <li>
+<<<<<<< HEAD
           <def>Leg</def>
 <customLabel>rear right leg</customLabel>
+=======
+          <def>RearRightLeg</def>
+>>>>>>> e3ce6f786cadb729259db4daa5a76955f71fa2cf
           <coverage>0.06</coverage>
           <height>Bottom</height>
           <parts>
@@ -200,4 +232,158 @@
       </parts>
     </corePart>
   </BodyDef>
+<<<<<<< HEAD
+=======
+
+  <!-- FellBeast -->
+
+  	<BodyDef>
+		<defName>FellBeast</defName>
+		<label>FellBeast</label>
+		<corePart>
+			<def>Body</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>Tail</def>
+					<coverage>0.21</coverage>
+				</li>
+				<li>
+					<def>Spine</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Stomach</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Heart</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>LeftLung</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>RightLung</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>LeftKidney</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>RightKidney</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Liver</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Neck</def>
+					<coverage>0.50</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>Head</def>
+							<coverage>0.75</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+							<parts>
+								<li>
+									<def>Skull</def>
+									<coverage>0.25</coverage>
+									<depth>Inside</depth>
+									<parts>
+										<li>
+											<def>Brain</def>
+											<coverage>0.7</coverage>
+											<depth>Inside</depth>
+										</li>
+									</parts>
+								</li>
+								<li>
+									<def>LeftEye</def>
+									<coverage>0.12</coverage>
+								</li>
+								<li>
+									<def>RightEye</def>
+									<coverage>0.12</coverage>
+								</li>
+								<li>
+									<def>LeftEar</def>
+									<coverage>0.08</coverage>
+								</li>
+								<li>
+									<def>RightEar</def>
+									<coverage>0.08</coverage>
+								</li>
+								<li>
+									<def>Nose</def>
+									<coverage>0.1</coverage>
+								</li>
+								<li>
+									<def>AnimalJaw</def>
+									<coverage>0.1</coverage>
+									<groups>
+										<li>Teeth</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>FrontLeftLeg</def>
+					<coverage>0.07</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>FrontLeftPaw</def>
+							<coverage>0.15</coverage>
+							<groups>
+								<li>FrontLeftPaw</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>FrontRightLeg</def>
+					<coverage>0.07</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>FrontRightPaw</def>
+							<coverage>0.15</coverage>
+							<groups>
+								<li>FrontRightPaw</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>FrontLeftWing</def>
+					<coverage>0.07</coverage>
+					<height>Middle</height>
+				</li>
+				<li>
+					<def>FrontRightWing</def>
+					<coverage>0.07</coverage>
+					<height>Middle</height>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+>>>>>>> e3ce6f786cadb729259db4daa5a76955f71fa2cf
 </Defs>

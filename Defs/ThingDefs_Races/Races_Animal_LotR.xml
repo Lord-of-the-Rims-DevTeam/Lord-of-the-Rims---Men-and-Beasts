@@ -23,7 +23,7 @@
   </ThingDef>
 
 	  <ThingDef ParentName="AnimalThingBase">
-    <defName>Mumakils</defName>
+    <defName>LotRBM_Mumakils</defName>
     <label>mumakil</label>
     <description>I have no clue what to set as a description so cheese :)</description>
     <statBases>
@@ -119,13 +119,13 @@
       </li>
 	</comps>
   </ThingDef>
- 
+
  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>Mumakils</defName>
+    <defName>LotRBM_Mumakils</defName>
     <label>mumakil</label>
     <race>Mumakils</race>
     <combatPower>200</combatPower>
-     
+
     <ecoSystemWeight>1</ecoSystemWeight>
     <wildGroupSize>
       <min>3</min>

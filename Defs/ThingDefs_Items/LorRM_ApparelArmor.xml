@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	  <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Haradrim_Rattan_Armor</defName>
+    <defName>LotRM_Haradrim_Rattan_Armor</defName>
     <label>haradrim rattan armor</label>
     <description>Haradrim Rattan Armor</description>
     <graphicData>
@@ -74,7 +74,7 @@
   </ThingDef>
   
     <ThingDef ParentName="ApparelMakeableBase">
-    <defName>Easterling_Plate_Armor</defName>
+    <defName>LotRM_Easterling_Plate_Armor</defName>
     <label>easterling plate armor</label>
     <description>Easterling Plate Armor</description>
     <graphicData>
