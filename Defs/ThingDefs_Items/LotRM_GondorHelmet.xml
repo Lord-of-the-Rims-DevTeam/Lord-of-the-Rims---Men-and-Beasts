@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>LotRM_GondorApparel_IronHillHelmet</defName>
+    <label>gondor plate helmet</label>
+    <description>A helmet worn by soldiers from Gondor.</description>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>LotRM_ArmorThree</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+	  <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Apparel/Gondor/Helmet/carnovGondor_Helmet_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>220</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>16000</WorkToMake>
+      <MaxHitPoints>125</MaxHitPoints>
+      <Mass>3.15</Mass>
+      <StuffEffectMultiplierArmor>0.76</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Apparel/Gondor/Helmet/carnovGondor_Helmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+        <li>LotR_GondorMilitary</li>
+      </tags>
+    </apparel>
+	<tradeTags>
+	  <li>LotRM_GondorArmor</li>
+	</tradeTags>
+  </ThingDef>
+  
+</Defs>
