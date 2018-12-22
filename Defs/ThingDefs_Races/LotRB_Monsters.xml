@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>LotRB_Leather_FellBeast</defName>
+    <label>fellbeast hide</label>
+    <description>The tanned flesh and scales of a fellbeast. Extremely durable. Used for the high quality crafts for its strength.</description>
+    <graphicData>
+      <color>(30,30,30)</color>
+      <colorTwo>(30,30,30)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MarketValue>16.0</MarketValue>
+      <StuffPower_Armor_Sharp>2.12</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>24</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>32</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(151,63,42)</color>
+      <commonality>0.0015</commonality>
+    </stuffProps>
+  </ThingDef>
+
+
 	  <ThingDef ParentName="AnimalThingBase">
-    <defName>LotR_FellBeast</defName>
+    <defName>LotRB_FellBeastRace</defName>
     <label>fell beast</label>
     <description>DEATH</description>
     <statBases>
@@ -27,7 +50,7 @@
         </capacities>
         <power>14</power>
         <cooldownTime>1.65</cooldownTime>
-        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
       </li>
       <li>
         <label>right foot</label>
@@ -36,7 +59,7 @@
         </capacities>
         <power>14</power>
         <cooldownTime>1.65</cooldownTime>
-        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
       </li>
       <li>
         <label>head</label>
@@ -46,17 +69,19 @@
         <power>11</power>
         <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <commonality>0.2</commonality>
+        <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
     <race>
-      <body>FellBeast</body>
+      <body>LotRB_FellBeastBody</body>
       <herdAnimal>true</herdAnimal>
       <herdMigrationAllowed>false</herdMigrationAllowed>
       <baseBodySize>3.5</baseBodySize>
       <baseHungerRate>4.5</baseHungerRate>
       <baseHealthScale>13.0</baseHealthScale>
       <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+	  <leatherDef>LotRB_Leather_FellBeast</leatherDef>
+      <!--
       <leatherColor>(233,233,233)</leatherColor>
       <leatherInsulation>1.35</leatherInsulation>
       <leatherCommonalityFactor>0.1</leatherCommonalityFactor>
@@ -67,7 +92,8 @@
         <ArmorRating_Sharp>4.0</ArmorRating_Sharp>
         <ArmorRating_Heat>3.2</ArmorRating_Heat>
       </leatherStatFactors>
-      <trainableIntelligence>Advanced</trainableIntelligence>
+      -->
+      <trainability>Advanced</trainability>
       <gestationPeriodDays>80</gestationPeriodDays>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
@@ -98,18 +124,19 @@
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">
-    <defName>LotR_FellBeast</defName>
+    <defName>LotRB_FellBeast</defName>
     <label>fell beast</label>
-    <race>LotR_FellBeast</race>
+    <race>LotRB_FellBeastRace</race>
     <combatPower>440</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
-    <wildSpawn_spawnWild>false</wildSpawn_spawnWild>
+    
+    <ecoSystemWeight>0.000001</ecoSystemWeight>
     <lifeStages>
       <li>
         <label>baby fell beast</label>
         <labelPlural>baby fell beasts</labelPlural>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/FellBeast/fellbeast</texPath>
+          <texPath>Things/Pawn/Animal/FellBeast/sheidulaFellbeast</texPath>
           <drawSize>4.5</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
@@ -123,7 +150,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/FellBeast/fellbeast</texPath>
+          <texPath>Things/Pawn/Animal/FellBeast/sheidulaFellbeast</texPath>
           <drawSize>8.0</drawSize>
           <shadowData>
             <volume>(0.7, 0.6, 0.4)</volume>
@@ -137,7 +164,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/FellBeast/fellbeast</texPath>
+          <texPath>Things/Pawn/Animal/FellBeast/sheidulaFellbeast</texPath>
           <drawSize>12.8</drawSize>
           <shadowData>
             <volume>(1, 0.8, 0.5)</volume>
@@ -155,7 +182,7 @@
   <!-- Wight -->
   
     <ThingDef ParentName="AnimalThingBase">
-    <defName>LotR_Wight</defName>
+    <defName>LotRB_WightRace</defName>
     <label>wight</label>
     <description>A medium-sized herding herbivore. Generally peaceful unless disturbed.</description>
     <statBases>
@@ -181,9 +208,11 @@
 			<baseHealthScale>0.9</baseHealthScale>
 			<baseHungerRate>0.40</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
+      <!-->
       <leatherColor>(162,106,57)</leatherColor>
       <leatherLabel>deerhide</leatherLabel>
       <leatherInsulation>0.9</leatherInsulation>
+      -->
       <meatLabel>venison</meatLabel>
       <wildness>0.75</wildness>
       <nuzzleMtbHours>120</nuzzleMtbHours>
@@ -217,23 +246,16 @@
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">
-    <defName>LotR_Wight</defName>
+    <defName>LotRB_Wight</defName>
     <label>wight</label>
     <labelPlural>wights</labelPlural>
-    <race>LotR_Wight</race>
+    <race>LotRB_WightRace</race>
     <combatPower>50</combatPower>
-    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
-    <wildSpawn_EcoSystemWeight>0.7</wildSpawn_EcoSystemWeight>
-    <wildSpawn_GroupSizeRange>
-      <min>3</min>
-      <max>9</max>
-    </wildSpawn_GroupSizeRange>
-    <labelMale>wight</labelMale>
-    <labelFemale>wight</labelFemale>
+    <ecoSystemWeight>0.000001</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Wight/wight</texPath>
+          <texPath>Things/Pawn/Animal/Wight/sheidulaWight</texPath>
           <drawSize>2</drawSize>
           <color>(140,74,41)</color>
           <shaderType>CutoutComplex</shaderType>
@@ -245,7 +267,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Wight/wight</texPath>
+          <texPath>Things/Pawn/Animal/Wight/sheidulaWight</texPath>
           <drawSize>2</drawSize>
           <color>(140,74,41)</color>
           <shaderType>CutoutComplex</shaderType>
@@ -261,7 +283,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Wight/wight</texPath>
+          <texPath>Things/Pawn/Animal/Wight/sheidulaWight</texPath>
           <drawSize>2</drawSize>
           <color>(156,112,62)</color>
           <shaderType>CutoutComplex</shaderType>
@@ -271,7 +293,7 @@
           </shadowData>
         </bodyGraphicData>
         <femaleGraphicData>
-          <texPath>Things/Pawn/Animal/Wight/wight</texPath>
+          <texPath>Things/Pawn/Animal/Wight/sheidulaWight</texPath>
           <drawSize>2</drawSize>
           <color>(188,146,110)</color>
           <shaderType>CutoutComplex</shaderType>

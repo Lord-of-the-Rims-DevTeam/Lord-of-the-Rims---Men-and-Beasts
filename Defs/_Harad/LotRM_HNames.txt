@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Adds name generation files to Harad -->
+<!-- Check the root directory/Languages/English/strings -->
+<!--   to find files with names for the faction -->
+
+  <RulePackDef>
+    <defName>LotRMB_HaradrimMaleNamer</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[pack]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>pack</keyword>
+          <path>NameBanks/Names_HaradrimMale</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>LotRMB_HaradrimFemaleNamer</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[pack]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>pack</keyword>
+          <path>NameBanks/Names_HaradrimFemale</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+</Defs>

@@ -2,12 +2,12 @@
 <Defs>
 
   <ThingDef ParentName="ArmorHelmetMakeableBase">
-    <defName>LotRM_GondorApparel_IronHillHelmet</defName>
+    <defName>LotRM_GondorApparel_PlateHelmet</defName>
     <label>gondor plate helmet</label>
     <description>A helmet worn by soldiers from Gondor.</description>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>LotRM_ArmorThree</researchPrerequisite>
+      <!--<researchPrerequisite>LotRM_ArmorThree</researchPrerequisite>-->
       <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 	  <skillRequirements>
         <Crafting>5</Crafting>
@@ -16,6 +16,7 @@
     <graphicData>
       <texPath>Things/Pawn/Apparel/Gondor/Helmet/carnovGondor_Helmet_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <costStuffCount>220</costStuffCount>
     <stuffCategories>

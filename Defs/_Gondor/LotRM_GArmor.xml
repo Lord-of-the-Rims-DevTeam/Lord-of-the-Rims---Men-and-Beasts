@@ -16,6 +16,7 @@
     <graphicData>
       <texPath>Things/Pawn/Apparel/Gondor/Plate/carnovGondor_regular_plate_Male_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <costStuffCount>230</costStuffCount>
     <stuffCategories>

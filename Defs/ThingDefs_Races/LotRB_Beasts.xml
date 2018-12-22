@@ -3,7 +3,7 @@
 
 
   <ThingDef ParentName="LeatherBase">
-    <defName>LotRBM_Leather_Mumakil</defName>
+    <defName>LotRB_Leather_Mumakil</defName>
     <label>Mumakil leather</label>
     <description>Tanned, dried, scraped mumakil skin. While quite tough, it is a poor insulator.</description>
     <graphicData>
@@ -23,7 +23,7 @@
   </ThingDef>
 
 	  <ThingDef ParentName="AnimalThingBase">
-    <defName>LotRBM_Mumakils</defName>
+    <defName>LotRB_MumakilRace</defName>
     <label>mumakil</label>
     <description>I have no clue what to set as a description so cheese :)</description>
     <statBases>
@@ -78,7 +78,7 @@
       <baseBodySize>6.0</baseBodySize>
       <baseHealthScale>3.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
-	  <leatherDef>LotRBM_Leather_Mumakil</leatherDef>
+	  <leatherDef>LotRB_Leather_Mumakil</leatherDef>
       <gestationPeriodDays>60</gestationPeriodDays>
       <wildness>0.75</wildness>
       <nuzzleMtbHours>120</nuzzleMtbHours>
@@ -121,12 +121,12 @@
   </ThingDef>
 
  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>LotRBM_Mumakils</defName>
+    <defName>LotRB_Mumakil</defName>
     <label>mumakil</label>
-    <race>Mumakils</race>
+    <race>LotRB_MumakilRace</race>
     <combatPower>200</combatPower>
 
-    <ecoSystemWeight>1</ecoSystemWeight>
+    <ecoSystemWeight>0.000001</ecoSystemWeight>
     <wildGroupSize>
       <min>3</min>
       <max>7</max>
@@ -135,7 +135,7 @@
       <li>
         <label>mumakil calf</label>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Mumakil/mumakil</texPath>
+          <texPath>Things/Pawn/Animal/Mumakil/sheidulaMumakil</texPath>
           <drawSize>1.8</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
@@ -149,7 +149,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Mumakil/mumakil</texPath>
+          <texPath>Things/Pawn/Animal/Mumakil/sheidluaMumakil</texPath>
           <drawSize>3.8</drawSize>
           <shadowData>
             <volume>(0.6, 0.45, 0.45)</volume>
@@ -163,7 +163,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Mumakil/mumakil</texPath>
+          <texPath>Things/Pawn/Animal/Mumakil/sheidulaMumakil</texPath>
           <drawSize>7.6</drawSize>
           <shadowData>
             <volume>(0.8, 0.6, 0.6)</volume>
