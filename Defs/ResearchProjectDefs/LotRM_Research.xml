@@ -60,7 +60,7 @@
   <ResearchProjectDef ParentName="LotRM_BaseResearch">
     <defName>LotRM_G_ArmorOne</defName>
     <label>Armor of Gondor</label>
-    <description>Gondor's blacksmiths are amongst the best in all mankind\n\nUnlock Gondorian armor:\n- Gondor plate helmet\n- Gondor full plate</description>
+    <description>Gondor's blacksmiths are amongst the best of all mankind.\n\nUnlock Gondorian armor:\n- Gondor plate helmet\n- Fountain-guard Helmet\n- Gondor full plate</description>
     <baseCost>700</baseCost>
     <tags>
       <li>LotRM_G_GondorScenario</li>

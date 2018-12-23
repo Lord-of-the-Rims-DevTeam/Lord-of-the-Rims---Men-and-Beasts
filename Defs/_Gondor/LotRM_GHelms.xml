@@ -49,4 +49,52 @@
     </tradeTags>
   </ThingDef>
 
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>LotRM_GondorApparel_FountainGuardHelmet</defName>
+    <label>Gondor fountain-guard helmet</label>
+    <description>An impressive helmet worn by the brave and loyal guards that protected the citadel of Minas Tirith.</description>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>LotRM_G_ArmorOne</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Apparel/Gondor/Helmet/carnovFountain_Guard_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>230</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>16500</WorkToMake>
+      <MaxHitPoints>125</MaxHitPoints>
+      <Mass>3.4</Mass>
+      <StuffEffectMultiplierArmor>0.78</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>6</EquipDelay>
+    </statBases>
+    <generateCommonality>1.2</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Apparel/Gondor/Helmet/carnovFountain_Guard</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>LotR_GondorMilitary</li>
+      </tags>
+    </apparel>
+    <tradeTags>
+      <li>LotRM_GondorArmor</li>
+    </tradeTags>
+  </ThingDef>
+
 </Defs>
