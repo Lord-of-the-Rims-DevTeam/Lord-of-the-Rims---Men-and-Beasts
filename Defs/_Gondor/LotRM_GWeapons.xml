@@ -1,141 +1,79 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>LotRM_MeleeWeapon_GondorSwordSwan</defName>
-    <label>swan knight blade</label>
-    <description>A finely crafted Gondorian blade, demonstrating the heraldry of the Swan Knights.</description>
+  <!-- Tier 1 -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>LotRM_MeleeWeapon_GondorSpear</defName>
+    <label>Gondor spear</label>
+    <description>A polearm tipped with a sharp point for stabbing opponents in melee combat. This one has a particularly nasty point forged by the Men of Gondor.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/Gondor/averouisSwanKnightBlade</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Gondor/averouisGondorSpear</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>1.0</drawSize>
+      <drawSize>1.75</drawSize>
     </graphicData>
-    <techLevel>Medieval</techLevel>
+    <techLevel>Neolithic</techLevel>
     <weaponTags>
-      <li>LotRM_NobleGondor</li>
+      <li>LotRM_SpearGondor</li>
     </weaponTags>
-    <costStuffCount>144</costStuffCount>
+    <costStuffCount>105</costStuffCount>
     <statBases>
-      <WorkToMake>26400</WorkToMake>
-      <Mass>1.8</Mass>
+      <WorkToMake>19550</WorkToMake>
+      <Mass>2.3</Mass>
     </statBases>
-    <equippedAngleOffset>50</equippedAngleOffset>
+    <equippedAngleOffset>-25</equippedAngleOffset>
     <stuffCategories>
       <li>Metallic</li>
+      <li>Woody</li>
     </stuffCategories>
-	<comps>
-	  <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">		  
-		<verticalFlipNorth>true</verticalFlipNorth>
-		<angleAdjustmentWest>90</angleAdjustmentWest>
-		<angleAdjustmentEast>-90</angleAdjustmentEast>
-		<northOffset>(0.35,0,0.2)</northOffset>
-		<eastOffset>(0.1,0,0.1)</eastOffset>
-		<westOffset>(-0.1,-0.2,0.1)</westOffset>
-		<southOffset>(-0.35,0,-0.2)</southOffset>
-	  </li>
-	</comps>
     <tools>
       <li>
-        <label>handle</label>
+        <label>shaft</label>
         <capacities>
           <li>Blunt</li>
+          <li>Poke</li>
         </capacities>
-        <power>7</power>
-        <cooldownTime>2.7</cooldownTime>
+        <power>8</power>
+        <cooldownTime>2.3</cooldownTime>
       </li>
       <li>
         <label>point</label>
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>17</power>
-        <cooldownTime>2.7</cooldownTime>
-      </li>
-      <li>
-        <label>edge</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>30</power>
-        <cooldownTime>2.5</cooldownTime>
+        <power>23</power>
+        <cooldownTime>2.3</cooldownTime>
       </li>
     </tools>
     <recipeMaker>
-      <!--<researchPrerequisite>LotRM_WeaponsThree</researchPrerequisite>-->
+      <researchPrerequisite>LotRM_G_WeaponsOne</researchPrerequisite>
     </recipeMaker>
-	<tradeTags>
-	  <li>LotRM_GondorianWeapons</li>
-	</tradeTags>
+    <tradeTags>
+      <li>LotRM_GondorianWeapons</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <verticalFlipNorth>true</verticalFlipNorth>
+        <angleAdjustmentWest>90</angleAdjustmentWest>
+        <angleAdjustmentEast>-90</angleAdjustmentEast>
+        <northOffset>(0.35,0,0.2)</northOffset>
+        <eastOffset>(0.1,0,0.1)</eastOffset>
+        <westOffset>(-0.1,-0.2,0.1)</westOffset>
+        <southOffset>(-0.35,0,-0.2)</southOffset>
+      </li>
+    </comps>
   </ThingDef>
 
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>LotRM_MeleeWeapon_GondorSword</defName>
-    <label>knight blade</label>
-    <description>A well crafted blade forged by a master swordsmith in Gondor.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/Gondor/averouisKnightBlade</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>1.0</drawSize>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <weaponTags>
-      <li>LotRM_KnightGondor</li>
-    </weaponTags>
-    <costStuffCount>137</costStuffCount>
-    <statBases>
-      <WorkToMake>25800</WorkToMake>
-      <Mass>1.9</Mass>
-    </statBases>
-    <equippedAngleOffset>50</equippedAngleOffset>
-    <stuffCategories>
-      <li>Metallic</li>
-    </stuffCategories>
-	<comps>
-	  <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">		  
-	  </li>
-	</comps>
-    <tools>
-      <li>
-        <label>handle</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>6</power>
-        <cooldownTime>2.7</cooldownTime>
-      </li>
-      <li>
-        <label>point</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>2.7</cooldownTime>
-      </li>
-      <li>
-        <label>edge</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>28</power>
-        <cooldownTime>2.5</cooldownTime>
-      </li>
-    </tools>
-    <recipeMaker>
-      <!--<researchPrerequisite>LotRM_WeaponsThree</researchPrerequisite>-->
-    </recipeMaker>
-	<tradeTags>
-	  <li>LotRM_GondorianWeapons</li>
-	</tradeTags>
-  </ThingDef>
+  <!-- Tier 2 -->
 
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>LotRM_MeleeWeapon_GondorSword</defName>
     <label>Gondorian Sword</label>
     <description>A simple Gondorian blade, quickly produced for soldiers on the battlefield.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponMelee/Gondor/averouisCombatBlade</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>0.9</drawSize>
+      <drawSize>0.9</drawSize>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <weaponTags>
@@ -150,10 +88,10 @@
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
-	<comps>
-	  <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">		  
-	  </li>
-	</comps>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+      </li>
+    </comps>
     <tools>
       <li>
         <label>handle</label>
@@ -181,74 +119,139 @@
       </li>
     </tools>
     <recipeMaker>
-      <!--<researchPrerequisite>LotRM_WeaponsTwo</researchPrerequisite>-->
+      <researchPrerequisite>LotRM_G_WeaponsTwo</researchPrerequisite>
     </recipeMaker>
-	<tradeTags>
-	  <li>LotRM_GondorianWeapons</li>
-	</tradeTags>
+    <tradeTags>
+      <li>LotRM_GondorianWeapons</li>
+    </tradeTags>
   </ThingDef>
 
-  
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>LotRM_MeleeWeapon_GondorSpear</defName>
-		<label>Gondor spear</label>
-		<description>A polearm tipped with a sharp point for stabbing opponents in melee combat. This one has a particularly nasty point forged by the Men of Gondor.</description>
-		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponMelee/Gondor/averouisGondorSpear</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.75</drawSize>
-		</graphicData>
-		<techLevel>Neolithic</techLevel>
-		<weaponTags>
-			<li>LotRM_SpearGondor</li>
-		</weaponTags>
-		<costStuffCount>105</costStuffCount>
-		<statBases>
-			<WorkToMake>19550</WorkToMake>
-			<Mass>2.3</Mass>
-		</statBases>
-		<equippedAngleOffset>-25</equippedAngleOffset>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Woody</li>
-		</stuffCategories>
+  <!-- Tier 3 -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>LotRM_MeleeWeapon_GondorSwanKnightBlade</defName>
+    <label>Swan knight blade</label>
+    <description>A finely crafted Gondorian blade, demonstrating the heraldry of the Swan Knights.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Gondor/averouisSwanKnightBlade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>LotRM_NobleGondor</li>
+    </weaponTags>
+    <costStuffCount>144</costStuffCount>
+    <statBases>
+      <WorkToMake>26400</WorkToMake>
+      <Mass>1.8</Mass>
+    </statBases>
+    <equippedAngleOffset>50</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <verticalFlipNorth>true</verticalFlipNorth>
+        <angleAdjustmentWest>90</angleAdjustmentWest>
+        <angleAdjustmentEast>-90</angleAdjustmentEast>
+        <northOffset>(0.35,0,0.2)</northOffset>
+        <eastOffset>(0.1,0,0.1)</eastOffset>
+        <westOffset>(-0.1,-0.2,0.1)</westOffset>
+        <southOffset>(-0.35,0,-0.2)</southOffset>
+      </li>
+    </comps>
     <tools>
       <li>
-        <label>shaft</label>
+        <label>handle</label>
         <capacities>
           <li>Blunt</li>
-          <li>Poke</li>
         </capacities>
-        <power>8</power>
-        <cooldownTime>2.3</cooldownTime>
+        <power>7</power>
+        <cooldownTime>2.7</cooldownTime>
       </li>
       <li>
         <label>point</label>
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>23</power>
-        <cooldownTime>2.3</cooldownTime>
+        <power>17</power>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>2.5</cooldownTime>
       </li>
     </tools>
-		<recipeMaker>
-			<!--<researchPrerequisite>LotRM_WeaponsOne</researchPrerequisite>-->
-		</recipeMaker>
-	<tradeTags>
-	  <li>LotRM_GondorianWeapons</li>
-	</tradeTags>
-	<comps>
-	  <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">		  
-		<verticalFlipNorth>true</verticalFlipNorth>
-		<angleAdjustmentWest>90</angleAdjustmentWest>
-		<angleAdjustmentEast>-90</angleAdjustmentEast>
-		<northOffset>(0.35,0,0.2)</northOffset>
-		<eastOffset>(0.1,0,0.1)</eastOffset>
-		<westOffset>(-0.1,-0.2,0.1)</westOffset>
-		<southOffset>(-0.35,0,-0.2)</southOffset>
-	  </li>
-	</comps>
-	</ThingDef>
+    <recipeMaker>
+      <researchPrerequisite>LotRM_G_WeaponsThree</researchPrerequisite>
+    </recipeMaker>
+    <tradeTags>
+      <li>LotRM_GondorianWeapons</li>
+    </tradeTags>
+  </ThingDef>
 
-  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>LotRM_MeleeWeapon_GondorKnightBlade</defName>
+    <label>Gondorian knight blade</label>
+    <description>A well crafted blade forged by a master swordsmith in Gondor.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Gondor/averouisKnightBlade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>LotRM_KnightGondor</li>
+    </weaponTags>
+    <costStuffCount>137</costStuffCount>
+    <statBases>
+      <WorkToMake>25800</WorkToMake>
+      <Mass>1.9</Mass>
+    </statBases>
+    <equippedAngleOffset>50</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>28</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>LotRM_G_WeaponsThree</researchPrerequisite>
+    </recipeMaker>
+    <tradeTags>
+      <li>LotRM_GondorianWeapons</li>
+    </tradeTags>
+  </ThingDef>
 </Defs>

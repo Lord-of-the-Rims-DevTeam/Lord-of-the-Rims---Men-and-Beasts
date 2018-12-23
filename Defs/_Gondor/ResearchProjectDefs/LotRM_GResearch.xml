@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchTabDef>
+    <defName>LotRM_G_GondorTab</defName>
+    <label>Gondor, Khazâd</label>
+  </ResearchTabDef>
+
+  <ResearchProjectDef Name="GondorResearch" Abstract="True">
+    <techLevel>Medieval</techLevel>
+    <tab>LotRM_G_GondorTab</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectTagDef>
+    <defName>LotRM_G_GondorScenario</defName>
+  </ResearchProjectTagDef>
+
+  <!--======== Column 1 =========-->
+  <!--======= Gondor Weapons ======-->
+
+  <ResearchProjectDef ParentName="GondorResearch">
+    <defName>LotRM_G_WeaponsOne</defName>
+    <label>Kingdom of Elendil!</label>
+    <description>&lt;i&gt;Gondor!&lt;/i&gt;\n\nUnlock the classic weapons of Gondor:\n- Gondor Spear</description>
+    <baseCost>250</baseCost>
+    <tags>
+      <li>LotRM_G_GondorScenario</li>
+    </tags>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="GondorResearch">
+    <defName>LotRM_G_WeaponsTwo</defName>
+    <label>Gondorian Swords!</label>
+    <description>&lt;i&gt;For Elendil!&lt;/i&gt;\n\nUnlock proper Gondorian weapons:\n- Gondorian Sword</description>
+    <baseCost>500</baseCost>
+    <prerequisites>
+      <li>LotRM_G_WeaponsOne</li>
+    </prerequisites>
+    <researchViewX>0.75</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="GondorResearch">
+    <defName>LotRM_G_WeaponsThree</defName>
+    <label>Gondorian Knight Weapons!</label>
+    <description>&lt;i&gt;Elite weapons for elite warriors.&lt;/i&gt;\n\nUnlock weapons wielded by Gondorian knights:\n- Knight blade\n- Swan Knight blade</description>
+    <baseCost>750</baseCost>
+    <prerequisites>
+      <li>LotRM_G_WeaponsTwo</li>
+    </prerequisites>
+    <researchViewX>1.5</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <!--======== Column 2 =========-->
+  <!--======= Gondor Armor ======-->
+
+  <ResearchProjectDef ParentName="GondorResearch">
+    <defName>LotRM_G_ArmorOne</defName>
+    <label>Armor of Gondor</label>
+    <description>Gondor's blacksmiths are amongst the best in all mankind\n\nUnlock Gondorian armor:\n- Gondor plate helmet\n- Gondor full plate</description>
+    <baseCost>700</baseCost>
+    <tags>
+      <li>LotRM_G_GondorScenario</li>
+    </tags>
+    <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+</Defs>

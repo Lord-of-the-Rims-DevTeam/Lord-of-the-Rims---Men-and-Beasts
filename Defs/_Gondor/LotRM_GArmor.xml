@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="ArmorSmithableBase">
+  <ThingDef ParentName="ArmorSmithableBase">
     <defName>LotRM_GondorApparel_PlateArmor</defName>
     <label>Gondor full plate</label>
     <description>Armor used by the men of Gondor to defend Middle-Earth from the forces of darkness.</description>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <!--<researchPrerequisite>LotRM_ArmorThree</researchPrerequisite>-->
+      <researchPrerequisite>LotRM_G_ArmorOne</researchPrerequisite>
       <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
@@ -38,30 +38,30 @@
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
-		<generateCommonality>2</generateCommonality>
-		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
+    <generateCommonality>2</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
         <li>Neck</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Apparel/Gondor/Plate/carnovGondor_regular_plate</wornGraphicPath>
-			<layers>
-				<li>Middle</li>
-				<li>Shell</li>
-			</layers>
-			<tags>
-			  <li>LotR_GondorMilitary</li>
-			</tags>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Apparel/Gondor/Plate/carnovGondor_regular_plate</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>LotR_GondorMilitary</li>
+      </tags>
       <defaultOutfitTags>
         <li>LotR_GondorFullPlate</li>
       </defaultOutfitTags>
     </apparel>
-	<tradeTags>
-	  <li>LotRM_GondorArmor</li>
-	</tradeTags>
+    <tradeTags>
+      <li>LotRM_GondorArmor</li>
+    </tradeTags>
   </ThingDef>
 
 </Defs>
