@@ -140,7 +140,7 @@
     </backstoryCategories>
     <combatPower>120</combatPower>
     <isFighter>true</isFighter>
-    <maxGenerationAge>6500</maxGenerationAge>
+    <maxGenerationAge>40</maxGenerationAge>
     <gearHealthRange>
       <min>0.5</min>
       <max>1.8</max>
@@ -153,6 +153,58 @@
       <max>9000</max>
     </apparelMoney>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <weaponMoney>
+      <min>410</min>
+      <max>2000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>LotRM_KnightGondor</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>300</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.001</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>30</min>
+        <max>100</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BasePlayerPawnKind" Name="LotRM_GondorFountainGuard">
+    <defName>LotRM_GondorFountainGuard</defName>
+    <label>Gondor Fountain Guard</label>
+    <defaultFactionType>LotRM_Gondor</defaultFactionType>
+    <backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
+    <combatPower>130</combatPower>
+    <isFighter>true</isFighter>
+    <maxGenerationAge>50</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>LotR_GondorMilitary</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>3000</min>
+      <max>9000</max>
+    </apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <apparelRequired>
+      <li>LotRM_GondorApparel_PlateArmor</li>
+      <li>LotRM_GondorApparel_FountainGuardHelmet</li>
+    </apparelRequired>
     <weaponMoney>
       <min>410</min>
       <max>2000</max>
