@@ -69,18 +69,32 @@
     <researchViewY>1</researchViewY>
   </ResearchProjectDef>
 
-  <ResearchProjectDef ParentName="LotRM_BaseResearch">
-    <defName>LotRM_G_ArmorTwo</defName>
-    <label>Swan-Armor of Dol Amroth</label>
-    <description>A castle city located in Gondor, Dol Amroth is home to knights and cavalry sworn to protect mankind.\n\nUnlock Armor from Dol Amroth:\n- Swan-knight helmet</description>
-    <baseCost>700</baseCost>
-    <prerequisites>
-      <li>LotRM_G_ArmorOne</li>
-    </prerequisites>
-    <tags>
-      <li>LotRM_G_GondorScenario</li>
-    </tags>
-    <researchViewX>0</researchViewX>
-    <researchViewY>1</researchViewY>
-  </ResearchProjectDef>
+<!--
+  ... <ResearchProjectDef ParentName="LotRM_BaseResearch">
+  ...   <defName>LotRM_G_ArmorTwo</defName>
+  ...   <label>Swan-Armor of Dol Amroth</label>
+  ...   <description>A castle city located in Gondor, Dol Amroth is home to knights and cavalry sworn to protect mankind.\n\nUnlock Armor from Dol Amroth:\n- Swan-knight helmet</description>
+  ...   <baseCost>900</baseCost>
+  ...   <prerequisites>
+  ...     <li>LotRM_G_ArmorOne</li>
+  ...   </prerequisites>
+  ...   <tags>
+  ...     <li>LotRM_G_GondorScenario</li>
+  ...   </tags>
+  ...   <researchViewX>0.75</researchViewX>
+  ...   <researchViewY>1</researchViewY>
+  ... </ResearchProjectDef>
+  ...
+  ... <ResearchProjectDef ParentName="LotRM_BaseResearch">
+  ...   <defName>LotRM_G_Shields</defName>
+  ...   <label>Shields of Gondor</label>
+  ...   <description>Desc goes here.\n\nUnlock Shields for Gondor:\n- White Tree Shield</description>
+  ...   <baseCost>400</baseCost>
+  ...   <tags>
+  ...     <li>LotRM_G_GondorScenario</li>
+  ...   </tags>
+  ...   <researchViewX>1.5</researchViewX>
+  ...   <researchViewY>1</researchViewY>
+  ... </ResearchProjectDef>
+  -->
 </Defs>
