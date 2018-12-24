@@ -69,7 +69,7 @@
     <researchViewY>1</researchViewY>
   </ResearchProjectDef>
 
-<!--
+  <!--
   ... <ResearchProjectDef ParentName="LotRM_BaseResearch">
   ...   <defName>LotRM_G_ArmorTwo</defName>
   ...   <label>Swan-Armor of Dol Amroth</label>

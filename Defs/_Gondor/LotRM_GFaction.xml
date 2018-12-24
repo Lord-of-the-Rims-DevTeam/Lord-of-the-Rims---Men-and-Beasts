@@ -103,5 +103,10 @@
       </li>
     </pawnGroupMakers>
     <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
+    <modExtensions>
+      <li Class="JecsTools.FactionSettings">
+        <entrySoundDef>LotRM_FanfareGondor</entrySoundDef>
+      </li>
+    </modExtensions>
   </FactionDef>
 </Defs>
