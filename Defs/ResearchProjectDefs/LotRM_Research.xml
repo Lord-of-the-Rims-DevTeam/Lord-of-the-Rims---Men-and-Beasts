@@ -33,7 +33,7 @@
   <ResearchProjectDef ParentName="LotRM_BaseResearch">
     <defName>LotRM_G_WeaponsTwo</defName>
     <label>Weapons of War</label>
-    <description>&lt;i&gt;&quot;The beacons of Gondor are alight, calling for aid. War is kindled.&quot;&lt;/i&gt;\n\nUnlock proper Gondorian weapons:\n- Gondorian Sword</description>
+    <description>&lt;i&gt;&quot;The beacons of Gondor are alight, calling for aid. War is kindled.&quot;&lt;/i&gt;\n\nUnlock proper Gondorian weapons:\n- Gondorian Sword\n - Gondorian Shield</description>
     <baseCost>500</baseCost>
     <prerequisites>
       <li>LotRM_G_WeaponsOne</li>

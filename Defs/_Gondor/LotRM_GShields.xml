@@ -3,18 +3,19 @@
 
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<defName>LotRM_GondorShield</defName>
-		<label>Gondor crest shield</label>
+		<label>Gondorian shield</label>
 		<description>Metal shield bearing the mark of the sacred white tree of Gondor.</description>
 		<equipmentType>None</equipmentType>
 		<weaponTags>
       		<li>LotRM_ShieldGondor</li>
 		</weaponTags>
 		<recipeMaker>
-			<researchPrerequisite>LotRM_ArmorThree</researchPrerequisite>
+			<researchPrerequisite>LotRM_G_WeaponsTwo</researchPrerequisite>
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Pawn/Apparel/Gondor/Shield/averouisGondorShield</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<costStuffCount>55</costStuffCount>
@@ -37,7 +38,8 @@
 				<wieldedGraphic>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<texPath>Things/Pawn/Apparel/Gondor/Shield/averouisGondorShield</texPath>
-					<drawSize>(1.1, 1.1)</drawSize>
+					<drawSize>(0.8, 0.85)</drawSize>
+					<shaderType>CutoutComplex</shaderType>
 				</wieldedGraphic>
 				<renderProperties>
 					<!-- Same as defaults in C# -->

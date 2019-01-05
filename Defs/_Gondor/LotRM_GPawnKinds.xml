@@ -15,7 +15,7 @@
       <max>2.0</max>
     </gearHealthRange>
     <apparelTags>
-      <li>LotR_GondorVillager</li>
+      <li>IndustrialBasic</li>
     </apparelTags>
     <apparelMoney>
       <min>300</min>
@@ -159,7 +159,6 @@
     </weaponMoney>
     <weaponTags>
       <li>LotRM_KnightGondor</li>
-      		<li>LotRM_ShieldGondor</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -178,6 +177,18 @@
         <max>100</max>
       </countRange>
     </inventoryOptions>
+    <modExtensions>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+        <shieldMoney>
+          <min>0</min>
+          <max>2000</max>
+        </shieldMoney>
+        <!-- Looks in weapons for these tags. -->
+        <shieldTags>
+      		<li>LotRM_ShieldGondor</li>
+        </shieldTags>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BasePlayerPawnKind" Name="LotRM_GondorFountainGuard">
@@ -248,7 +259,6 @@
     </weaponMoney>
     <weaponTags>
       <li>GondorianMeleeTier1</li>
-      		<li>LotRM_ShieldGondor</li>
     </weaponTags>
     <modExtensions>
       <li Class="PawnShields.ShieldPawnGeneratorProperties">
@@ -258,7 +268,7 @@
         </shieldMoney>
         <!-- Looks in weapons for these tags. -->
         <shieldTags>
-          <li>GondorianShieldTier2</li>
+      		<li>LotRM_ShieldGondor</li>
         </shieldTags>
       </li>
     </modExtensions>
@@ -280,7 +290,6 @@
     </weaponMoney>
     <weaponTags>
       <li>LotRM_SpearGondor</li>
-      		<li>LotRM_ShieldGondor</li>
     </weaponTags>
     <modExtensions>
       <li Class="PawnShields.ShieldPawnGeneratorProperties">
@@ -290,7 +299,7 @@
         </shieldMoney>
         <!-- Looks in weapons for these tags. -->
         <shieldTags>
-          <li>GondorianShieldTier2</li>
+      		<li>LotRM_ShieldGondor</li>
         </shieldTags>
       </li>
     </modExtensions>

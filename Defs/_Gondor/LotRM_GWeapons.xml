@@ -5,7 +5,7 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>LotRM_MeleeWeapon_GondorSpear</defName>
-    <label>Gondor spear</label>
+    <label>Gondorian spear</label>
     <description>A polearm tipped with a sharp point for stabbing opponents in melee combat. This one has a particularly nasty point forged by the Men of Gondor.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponMelee/Gondor/averouisGondorSpear</texPath>
