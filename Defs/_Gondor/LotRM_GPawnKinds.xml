@@ -159,6 +159,7 @@
     </weaponMoney>
     <weaponTags>
       <li>LotRM_KnightGondor</li>
+      		<li>LotRM_ShieldGondor</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -247,6 +248,7 @@
     </weaponMoney>
     <weaponTags>
       <li>GondorianMeleeTier1</li>
+      		<li>LotRM_ShieldGondor</li>
     </weaponTags>
     <modExtensions>
       <li Class="PawnShields.ShieldPawnGeneratorProperties">
@@ -278,6 +280,7 @@
     </weaponMoney>
     <weaponTags>
       <li>LotRM_SpearGondor</li>
+      		<li>LotRM_ShieldGondor</li>
     </weaponTags>
     <modExtensions>
       <li Class="PawnShields.ShieldPawnGeneratorProperties">
