@@ -97,6 +97,54 @@
     </tradeTags>
   </ThingDef>
 
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>LotRM_GondorApparel_SwanKnightHelmet</defName>
+    <label>Dol Amroth helmet</label>
+    <description>The renowned Swan Knights of Dol Amroth serve as impressive cavalry in service of the kingdom of Gondor. Their helmet reflects their symbol - the swan.</description>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>LotRM_G_ArmorThree</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Apparel/Gondor/Helmet/carnovFountain_Guard_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>230</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>16500</WorkToMake>
+      <MaxHitPoints>125</MaxHitPoints>
+      <Mass>3.4</Mass>
+      <StuffEffectMultiplierArmor>0.782</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.65</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>6.5</EquipDelay>
+    </statBases>
+    <generateCommonality>1.15</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Apparel/Gondor/Helmet/carnovFountain_Guard</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>LotR_GondorMilitary</li>
+      </tags>
+    </apparel>
+    <tradeTags>
+      <li>LotRM_GondorArmor</li>
+    </tradeTags>
+  </ThingDef>
+
 <!-- carnovGondor_Crown -->
 
   <ThingDef ParentName="ArmorHelmetMakeableBase">
