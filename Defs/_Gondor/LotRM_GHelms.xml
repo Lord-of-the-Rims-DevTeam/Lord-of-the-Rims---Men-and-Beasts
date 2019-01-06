@@ -7,7 +7,7 @@
     <description>A helmet worn by soldiers from Gondor.</description>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>LotRM_G_ArmorOne</researchPrerequisite>
+      <researchPrerequisite>LotRM_G_ArmorTwo</researchPrerequisite>
       <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
@@ -55,7 +55,7 @@
     <description>An impressive helmet worn by the brave and loyal guards that protected the citadel of Minas Tirith.</description>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>LotRM_G_ArmorOne</researchPrerequisite>
+      <researchPrerequisite>LotRM_G_ArmorThree</researchPrerequisite>
       <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>6</Crafting>
@@ -96,5 +96,56 @@
       <li>LotRM_GondorArmor</li>
     </tradeTags>
   </ThingDef>
+
+<!-- carnovGondor_Crown -->
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>LotRM_GondorApparel_Crown</defName>
+    <label>Gondorian crown</label>
+    <description>The crown of Elendil, a ceremonial winged crown of the King of Gondor. It awaits the rightful heir to receive it.</description>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>LotRM_G_ArmorThree</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Apparel/Gondor/Helmet/carnovGondor_Crown_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Silver>300</Silver>
+    </costList>
+    <statBases>
+      <WorkToMake>14000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1.0</Mass>
+      <StuffEffectMultiplierArmor>0.66</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.65</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+      <SellPriceFactor>2.6</SellPriceFactor>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.3</SocialImpact>
+    </equippedStatOffsets>
+    <generateCommonality>0.01</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Apparel/Gondor/Helmet/carnovGondor_Crown</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>LotR_GondorKing</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
 
 </Defs>

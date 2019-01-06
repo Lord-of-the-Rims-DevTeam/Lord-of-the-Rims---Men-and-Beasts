@@ -81,7 +81,7 @@
     <maxGenerationAge>100</maxGenerationAge>
     <apparelRequired>
       <li>LotRM_GondorApparel_PlateArmor</li>
-      <!--<li>LotRM_GondorApparel_Crown</li>-->
+      <li>LotRM_GondorApparel_Crown</li>
     </apparelRequired>
     <apparelMoney>
       <min>2000</min>

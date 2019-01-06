@@ -20,8 +20,8 @@
 
   <ResearchProjectDef ParentName="LotRM_BaseResearch">
     <defName>LotRM_G_WeaponsOne</defName>
-    <label>Spears of the White Tree</label>
-    <description>&lt;i&gt;Gondor! Gondor, between the Mountains and the Sea! West Wind blew there; light upon the Silver Tree&lt;/i&gt;\n\nUnlock the classic weapons of Gondor:\n- Gondor Spear</description>
+    <label>Spears and Bows of the White Tree</label>
+    <description>&lt;i&gt;Gondor! Gondor, between the Mountains and the Sea! West Wind blew there; light upon the Silver Tree&lt;/i&gt;\n\nUnlock the classic weapons of Gondor:\n- Gondor Spear\n- Ithilien Ranger Bow</description>
     <baseCost>250</baseCost>
     <tags>
       <li>LotRM_G_GondorScenario</li>
@@ -59,13 +59,43 @@
 
   <ResearchProjectDef ParentName="LotRM_BaseResearch">
     <defName>LotRM_G_ArmorOne</defName>
-    <label>Armor of Gondor</label>
-    <description>Gondor's blacksmiths are amongst the best of all mankind.\n\nUnlock Gondorian armor:\n- Gondor plate helmet\n- Fountain-guard Helmet\n- Gondor full plate</description>
-    <baseCost>700</baseCost>
+    <label>Ithilien Gear</label>
+    <description>The rangers of the south are unparalleled in their stealth.\n\nUnlock Ithilien ranger outfit:\n- Ithilien ranger hood\n- Ithilien ranger gear</description>
+    <baseCost>250</baseCost>
     <tags>
       <li>LotRM_G_GondorScenario</li>
     </tags>
     <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="LotRM_BaseResearch">
+    <defName>LotRM_G_ArmorTwo</defName>
+    <label>Armor of Gondor</label>
+    <description>Gondor's blacksmiths are amongst the best of all mankind.\n\nUnlock Gondorian armor:\n- Gondor plate helmet\n- Fountain-guard Helmet\n- Gondor full plate</description>
+    <baseCost>500</baseCost>
+    <tags>
+      <li>LotRM_G_GondorScenario</li>
+    </tags>
+    <prerequisites>
+      <li>LotRM_G_ArmorOne</li>
+    </prerequisites>
+    <researchViewX>0.75</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="LotRM_BaseResearch">
+    <defName>LotRM_G_ArmorThree</defName>
+    <label>Nobility of Gondor</label>
+    <description>Since the absence of the kingship, the stewards have watched over Gondor, awaiting the return of the king.\n\nUnlock Gondorian noble items:\n- Gondorian crown\n- Fountain-guard Helmet</description>
+    <baseCost>700</baseCost>
+    <tags>
+      <li>LotRM_G_GondorScenario</li>
+    </tags>
+    <prerequisites>
+      <li>LotRM_G_ArmorTwo</li>
+    </prerequisites>
+    <researchViewX>1.5</researchViewX>
     <researchViewY>1</researchViewY>
   </ResearchProjectDef>
 

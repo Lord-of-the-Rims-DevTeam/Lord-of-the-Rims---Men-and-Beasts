@@ -7,7 +7,7 @@
     <description>Armor used by the men of Gondor to defend Middle-Earth from the forces of darkness.</description>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>LotRM_G_ArmorOne</researchPrerequisite>
+      <researchPrerequisite>LotRM_G_ArmorTwo</researchPrerequisite>
       <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
