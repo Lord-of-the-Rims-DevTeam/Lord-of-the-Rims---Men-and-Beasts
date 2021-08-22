@@ -8,29 +8,17 @@ namespace MenAndBeasts
 {
     public class WorkGiver_LightBeacon : WorkGiver_Scanner
     {
-        public override ThingRequest PotentialWorkThingRequest
-        {
-            get
-            {
-                return ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial);
-            }
-        }
+        public override ThingRequest PotentialWorkThingRequest =>
+            ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial);
+
+        public override PathEndMode PathEndMode => PathEndMode.Touch;
 
         public IEnumerable<Thing> BeaconsToLight(Pawn pawn)
         {
-                List<Thing> thingsToCheck = new List<Thing>(from Thing things in pawn.Map.listerBuildings.allBuildingsColonist
-                                                            where things.def.defName == "LotRM_GBeacon"
-                                                            select things);
-                return thingsToCheck;
-            
-        }
-
-        public override PathEndMode PathEndMode
-        {
-            get
-            {
-                return PathEndMode.Touch;
-            }
+            var thingsToCheck = new List<Thing>(from Thing things in pawn.Map.listerBuildings.allBuildingsColonist
+                where things.def.defName == "LotRM_GBeacon"
+                select things);
+            return thingsToCheck;
         }
 
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
@@ -40,30 +28,37 @@ namespace MenAndBeasts
 
         public override bool ShouldSkip(Pawn pawn, bool forced = false)
         {
-            return BeaconsToLight(pawn).Count<Thing>() == 0;
+            return !BeaconsToLight(pawn).Any();
         }
 
-        public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced=false)
+        public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            Building_BeaconUnlit building = t as Building_BeaconUnlit;
-            if (building == null)
+            if (!(t is Building_BeaconUnlit building))
             {
                 return false;
             }
+
             if (!building.ToBeLit)
             {
                 return false;
             }
+
             if (t.Faction != pawn.Faction)
             {
                 return false;
             }
+
             if (pawn.Faction == Faction.OfPlayer && !pawn.Map.areaManager.Home[t.Position])
             {
                 JobFailReason.Is(WorkGiver_FixBrokenDownBuilding.NotInHomeAreaTrans);
                 return false;
             }
-            if (!pawn.CanReserve(t)) return false;// pawn.Map.reservationManager.IsReserved(t, pawn.Faction)) return false;
+
+            if (!pawn.CanReserve(t))
+            {
+                return false; // pawn.Map.reservationManager.IsReserved(t, pawn.Faction)) return false;
+            }
+
             return true;
         }
 

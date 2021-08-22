@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef ParentName="BasePlayerPawnKind" Name="LotRM_IthilienRanger">
+    <defName>LotRM_IthilienRanger</defName>
+    <label>Ithilien Ranger</label>
+    <defaultFactionType>LotRM_Gondor</defaultFactionType>
+    <backstoryCategories>
+      <li>Outlander</li>
+    </backstoryCategories>
+    <combatPower>160</combatPower>
+    <isFighter>true</isFighter>
+    <maxGenerationAge>40</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>LotRM_IthilienRanger</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>3000</min>
+      <max>9000</max>
+    </apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <weaponMoney>
+      <min>410</min>
+      <max>2000</max>
+    </weaponMoney>
+    <apparelRequired>
+      <li>LotRM_Apparel_RangerApparel</li>
+      <li>LotRM_Apparel_RangerHood</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>LotRM_IthilienRanger</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>300</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.001</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>30</min>
+        <max>100</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+</Defs>

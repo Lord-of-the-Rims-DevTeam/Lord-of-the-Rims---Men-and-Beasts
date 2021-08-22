@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchTabDef>
+    <defName>LotRM_Tab</defName>
+    <label>Mankind, Atani</label>
+  </ResearchTabDef>
+  <ResearchProjectDef Name="LotRM_BaseResearch" Abstract="True">
+    <techLevel>Medieval</techLevel>
+    <tab>LotRM_Tab</tab>
+  </ResearchProjectDef>
+  <ResearchProjectTagDef>
+    <defName>LotRM_G_GondorScenario</defName>
+  </ResearchProjectTagDef>
+  <!--======== Column 1 =========-->
+  <!--======= Gondor Weapons ======-->
+  <ResearchProjectDef ParentName="LotRM_BaseResearch">
+    <defName>LotRM_G_WeaponsOne</defName>
+    <label>Spears and Bows of the White Tree</label>
+    <description>&lt;i&gt;Gondor! Gondor, between the Mountains and the Sea! West Wind blew there; light upon the Silver Tree&lt;/i&gt;\n\nUnlock the classic weapons of Gondor:\n- Gondor Spear\n- Ithilien Ranger Bow</description>
+    <baseCost>250</baseCost>
+    <tags>
+      <li>LotRM_G_GondorScenario</li>
+    </tags>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="LotRM_BaseResearch">
+    <defName>LotRM_G_WeaponsTwo</defName>
+    <label>Weapons of War</label>
+    <description>&lt;i&gt;"The beacons of Gondor are alight, calling for aid. War is kindled."&lt;/i&gt;\n\nUnlock proper Gondorian weapons:\n- Gondorian Sword\n - Gondorian Shield</description>
+    <baseCost>500</baseCost>
+    <prerequisites>
+      <li>LotRM_G_WeaponsOne</li>
+    </prerequisites>
+    <researchViewX>0.75</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="LotRM_BaseResearch">
+    <defName>LotRM_G_WeaponsThree</defName>
+    <label>Swan-Blades of Dol Amroth</label>
+    <description>&lt;i&gt;"Amroth for Gondor!" they cried. "Amroth to Faramir!" &lt;/i&gt;\n\nUnlock the arsenal wielded by the swan-knights of Dol Amroth:\n- Knight blade\n- Swan Knight blade</description>
+    <baseCost>750</baseCost>
+    <prerequisites>
+      <li>LotRM_G_WeaponsTwo</li>
+    </prerequisites>
+    <researchViewX>1.5</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <!--======== Column 2 =========-->
+  <!--======= Gondor Armor ======-->
+  <ResearchProjectDef ParentName="LotRM_BaseResearch">
+    <defName>LotRM_G_ArmorOne</defName>
+    <label>Ithilien Gear</label>
+    <description>The rangers of the south are unparalleled in their stealth.\n\nUnlock Ithilien ranger outfit:\n- Ithilien ranger hood\n- Ithilien ranger gear</description>
+    <baseCost>250</baseCost>
+    <tags>
+      <li>LotRM_G_GondorScenario</li>
+    </tags>
+    <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="LotRM_BaseResearch">
+    <defName>LotRM_G_ArmorTwo</defName>
+    <label>Armor of Gondor</label>
+    <description>Gondor's blacksmiths are amongst the best of all mankind.\n\nUnlock Gondorian armor:\n- Gondor plate helmet\n- Fountain-guard Helmet\n- Gondor full plate</description>
+    <baseCost>500</baseCost>
+    <tags>
+      <li>LotRM_G_GondorScenario</li>
+    </tags>
+    <prerequisites>
+      <li>LotRM_G_ArmorOne</li>
+    </prerequisites>
+    <researchViewX>0.75</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="LotRM_BaseResearch">
+    <defName>LotRM_G_ArmorThree</defName>
+    <label>Nobility of Gondor</label>
+    <description>Since the absence of the kingship, the stewards have watched over Gondor, awaiting the return of the king.\n\nUnlock Gondorian noble items:\n- Gondorian crown\n- Fountain-guard Helmet</description>
+    <baseCost>700</baseCost>
+    <tags>
+      <li>LotRM_G_GondorScenario</li>
+    </tags>
+    <prerequisites>
+      <li>LotRM_G_ArmorTwo</li>
+    </prerequisites>
+    <researchViewX>1.5</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <!--
+  ... <ResearchProjectDef ParentName="LotRM_BaseResearch">
+  ...   <defName>LotRM_G_ArmorTwo</defName>
+  ...   <label>Swan-Armor of Dol Amroth</label>
+  ...   <description>A castle city located in Gondor, Dol Amroth is home to knights and cavalry sworn to protect mankind.\n\nUnlock Armor from Dol Amroth:\n- Swan-knight helmet</description>
+  ...   <baseCost>900</baseCost>
+  ...   <prerequisites>
+  ...     <li>LotRM_G_ArmorOne</li>
+  ...   </prerequisites>
+  ...   <tags>
+  ...     <li>LotRM_G_GondorScenario</li>
+  ...   </tags>
+  ...   <researchViewX>0.75</researchViewX>
+  ...   <researchViewY>1</researchViewY>
+  ... </ResearchProjectDef>
+  ...
+  ... <ResearchProjectDef ParentName="LotRM_BaseResearch">
+  ...   <defName>LotRM_G_Shields</defName>
+  ...   <label>Shields of Gondor</label>
+  ...   <description>Desc goes here.\n\nUnlock Shields for Gondor:\n- White Tree Shield</description>
+  ...   <baseCost>400</baseCost>
+  ...   <tags>
+  ...     <li>LotRM_G_GondorScenario</li>
+  ...   </tags>
+  ...   <researchViewX>1.5</researchViewX>
+  ...   <researchViewY>1</researchViewY>
+  ... </ResearchProjectDef>
+  -->
+</Defs>

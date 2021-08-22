@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Adds name generation files to Easterlings -->
+  <!-- Check the root directory/Languages/English/strings -->
+  <!--   to find files with names for the faction -->
+  <RulePackDef>
+    <defName>LotRMB_EasterlingMaleNamer</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[pack]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>pack</keyword>
+          <path>NameBanks/Names_EasterlingMale</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>LotRMB_EasterlingFemaleNamer</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[pack]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>pack</keyword>
+          <path>NameBanks/Names_EasterlingFemale</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+</Defs>

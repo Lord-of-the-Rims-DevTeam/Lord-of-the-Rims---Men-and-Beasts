@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Misc -->
+  <JobDef>
+    <defName>LotRM_LightBeacon</defName>
+    <driverClass>MenAndBeasts.JobDriver_LightBeacon</driverClass>
+    <reportString>lighting TargetA.</reportString>
+  </JobDef>
+</Defs>
