@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Lord of the Rims - Men and Beasts (Continued)</name>
-  <packageId>Mlie.LordoftheRimsMenAndBeasts</packageId>
+  <name>Lord of the Rims - Men and Beasts</name>
+  <packageId>LordOfTheRims.MenAndBeasts</packageId>
   <author>Jecrell</author>
-  <url>https://github.com/emipa606/LordoftheRimsMenAndBeasts</url>
+  <url>https://discord.gg/jcMf4am%5Dour</url>
   <supportedVersions>
     <li>1.0</li>
     <li>1.1</li>
@@ -14,44 +14,13 @@
     <li>
       <packageId>jecrell.jecstools</packageId>
       <displayName>JecsTools</displayName>
-      <steamWorkshopUrl>steam://url/CommunityFilePage/2195729899</steamWorkshopUrl>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/932008009</steamWorkshopUrl>
     </li>
   </modDependencies>
   <loadAfter>
     <li>jecrell.jecstools</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
-Update of Jecrells mod
-https://github.com/Lord-of-the-Rims-DevTeam/Lord-of-the-Rims---Men-and-Beasts
-
-- This is an unofficial port
-- This will be removed when/if Jecrell comes back
-- Techlevel lowered to Medieval, backstories changed to tribal
-
-This mod is not really a finished work and only includes the Gondor faction and some beasts/monsters.
-It was however requested to be published. 
-If it gets more work done by the original team I will update this release as well.
-
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
-
-[table]
-    [tr]
-        [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
-        [td][url=https://github.com/emipa606/LordoftheRimsMenAndBeasts][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
-    [/tr]
-[/table]
-	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
+  <description>
 Adds the various factions / equipment of Men and the supporting creatures of Middle-Earth.
-
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
-[list]
-[*] See if the the error persists if you just have this mod and its requirements active.
-[*] If not, try adding your other mods until it happens again.
-[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
-[*] For best support, please use the Discord-channel for error-reporting.
-[*] Do not report errors by making a discussion-thread, I get no notification of that.
-[*] If you have the solution for a problem, please post it to the GitHub repository.
-[/list]
 </description>
 </ModMetaData>
